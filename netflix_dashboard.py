@@ -36,6 +36,23 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     padding-bottom: 0.4rem;
 }
 #MainMenu, footer, header { visibility:hidden; }
+            
+/* Labels de filtros */
+div[data-testid="stSelectbox"] label,
+div[data-testid="stSlider"] label {
+    color: #1A202C !important;
+    font-weight: 500;
+}
+
+/* Texto seleccionado dentro del selectbox */
+div[data-testid="stSelectbox"] div[data-baseweb="select"] span {
+    color: #1A202C !important;
+}
+
+/* Valor del slider */
+div[data-testid="stSlider"] p {
+    color: #1A202C !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
